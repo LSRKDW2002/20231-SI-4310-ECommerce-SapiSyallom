@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&family=Roboto&family=Yanone+Kaffeesatz&display=swap');
+
+  /* Styling untuk sambutan section */
+.sambutan-container{
+    display: flex;
+    justify-content: center;
+}
+
+.sambutan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.icon {
+    font-family: 'Pacifico', cursive;
+    margin-left: 10px !important;
+    font-size: 42px !important; 
+    padding-bottom: 15px;
+}
+
+.kataSambutan {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    
+}
+
+.kataSambutan h2 {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.kata-kata {
+    padding-top: 20px;
+    width: 600px;
+}
+
+.kataSambutan p {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.yuk-beli {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.yuk-beli h4 {
+    font-size: 24px;
+}
+
+.link-beli {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+
+@media (max-width: 768px) {
+    .sapi {
+        width: auto;
+        height: 100px;
+    }
+
+    .icon {
+        font-family: 'Pacifico', cursive;
+        margin-left: 10px !important;
+        font-size: 24px !important; 
+        padding-bottom: 15px;
+    }
+
+    .kataSambutan {
+        width: 300px;
+        align-items: center;
+    }
+
+    .kataSambutan h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .kata-kata {
+        padding-top: 0;
+        width: 300px;
+    }
+
+    .kata-kata p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .yuk-beli {
+        margin-top: 5vh;
+    }
+
+    .yuk-beli h4 {
+        font-size: 18px;
+    }
+}

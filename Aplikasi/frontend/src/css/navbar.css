@@ -1,0 +1,99 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Pacifico&family=Passion+One:wght@700&display=swap');
+
+
+.Menu{
+	display: flex;
+	width: 100%;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+    background-color: #776B5D;
+    list-style: none;
+    border-radius: 50px;
+    filter: drop-shadow(5px 3px 10px #000000);
+    margin-bottom: 25px;
+}
+.subMenu {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+	min-width: 80px;
+	margin: auto;
+}
+
+.link {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.subMenu:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #ffffff;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+	font-weight: bold;
+}
+.subMenu:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.judulLogo{
+    display: flex;
+}
+
+.logoName{
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .logs{
+    width: 50px;
+  }
+
+  .logoName {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px !important;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  .logo {
+    width: 100%;
+  }
+}

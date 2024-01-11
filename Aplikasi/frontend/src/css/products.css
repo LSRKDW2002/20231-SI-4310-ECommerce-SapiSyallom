@@ -1,0 +1,114 @@
+
+  @media screen and (max-width: 768px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsive dengan lebar minimum 250px */
+        gap: 20px; /* Jarak antar produk */
+        justify-items: center;
+      }
+  }
+  
+
+ 
+/* Styling for the product list container */
+.productRapi{
+  display: flex;
+  justify-content: center;
+}
+
+.product-container{
+  width: 80vw;
+}
+
+.product-list {
+  filter: drop-shadow(-2px 2px 3px #000000);
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Grid responsive dengan lebar minimum 350px */
+  gap: 20px; /* Jarak antar produk */
+  justify-items: center;
+}
+
+
+/* Styling for each product card */
+.product-card {
+  border-radius: 20px;
+  width: 380px;
+  color: white;
+  background: #1D2F36;
+  background: linear-gradient(135deg, #B0A695, #B0A695);
+  padding: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for product image */
+.product-image {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+/* Styling for product title */
+.product-title {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Styling for product price */
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444141;
+  margin-top: 5px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Styling for "Add to Cart" button */
+.cek-detail{
+  background: linear-gradient(135deg, #a09480, #6d685f);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.cek-detail:hover {
+  background: linear-gradient(135deg, #494742, #6d685f);
+}
+
+
+.input-product input[type="text"],
+.input-product input[type="number"],
+.input-product textarea {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #EBE3D5; /* Mengubah latar belakang input menjadi #1D2F36 */
+  color: black; /* Mengubah warna teks menjadi putih */
+  border: none; /* Menghilangkan border */
+  outline: none; /* Menghilangkan efek outline saat diklik */
+}
+
+.input-product input[type="file"] {
+  padding: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  background: #EBE3D5; /* Mengubah latar belakang input file menjadi #1D2F36 */
+  color: black; /* Mengubah warna teks menjadi putih */
+  border: none; /* Menghilangkan border */
+  outline: none; /* Menghilangkan efek outline saat diklik */
+  width: 90px;
+}

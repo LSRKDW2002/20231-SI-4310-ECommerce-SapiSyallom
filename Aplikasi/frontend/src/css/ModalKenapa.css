@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Pacifico&family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&family=Roboto&family=Yanone+Kaffeesatz&display=swap');
+
+/* ModalKenapa.css */
+.kenapa-box {
+    cursor: pointer;
+    padding: 10px;
+    background: linear-gradient(135deg, #a09480, #6d685f);
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+    margin-top: 10vh;
+    transition: transform 0.2s;
+    box-shadow: -1px 10px 23px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 23px 0px rgba(0,0,0,0.75);
+}
+
+.kenapa-box:hover {
+    background: linear-gradient(135deg, #494742, #6d685f);
+    transform: scale(1.05);
+}
+
+.kenapa-box h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.kenapa-box p {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.kenapa-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kenapa-content {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin: 15% auto;
+    padding: 15px;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 50%;
+}
+
+.kenapa-content li {
+    margin-bottom: 10px;
+}
+
+.icon-kenapa {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .kenapa-box {
+        width: 350px;
+        margin-top: 10vh;
+    }
+
+    .kenapa-box h2 {
+        font-size: 22px;
+    }
+
+    .kenapa-box p {
+        font-size: 20px;
+        margin: 5px;
+        padding-bottom: 2px;
+    }
+
+    .kenapa-content {
+        width: 85%;
+        height: 70%;
+        font-size: 12px;
+    }
+}

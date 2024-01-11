@@ -1,0 +1,93 @@
+/* Container styling */
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .backgroundlogin {
+    background-image: url('https://i.imgur.com/SoAv3yV.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  @media (max-width: 768px) {
+    .backgroundlogin {
+      background-size: auto;
+      background-position: center;
+    }
+  }
+
+  
+  /* Form container styling */
+  .formLogin-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  /* Form heading (h2) styling */
+  .formLogin-container h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  /* Label styling */
+  .formLogin-container label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Input field styling */
+  .formLogin-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .formLogin-container button {
+    background-color: #151e26;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .formLogin-container button:hover {
+    background-color: #2b2d31;
+  }
+  
+  /* Additional text (paragraph) styling */
+  .formLogin-container p {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  
+  /* Styled link (span) */
+  .formLogin-container span {
+    color: #1e2a36;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  

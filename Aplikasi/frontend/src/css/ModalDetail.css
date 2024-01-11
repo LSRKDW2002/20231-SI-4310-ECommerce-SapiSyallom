@@ -1,0 +1,104 @@
+/* Default styles for larger screens */
+.modal {
+    display: block;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin: 15% auto;
+    padding: 15px;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 65%;
+}
+
+.gambar-harga {
+    display: flex;
+    justify-content: center;
+}
+
+.gambar-detail {
+    border-radius: 30px 30px 30px 30px;
+}
+
+.gambar-harga p {
+    padding-top: 10px;
+}
+
+.detail {
+    width: 100%;
+    text-align: center;
+}
+
+.detail p {
+    margin: 10px;
+}
+
+.tombol-tutup {
+    background: #494742;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 10px;
+}
+
+.tombol-tutup:hover {
+    background: linear-gradient(135deg, #a09480, #6d685f);
+}
+
+.tombol-buy {
+    background: #149900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.tombol-buy:hover {
+    background: linear-gradient(135deg, #83a080, #259200);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+        height: 80%;
+        margin: 20% auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gambar-harga {
+        height: 40%;
+        width: 100%;
+    }
+
+    .detail {
+        width: 80%;
+        font-size: smaller;
+    }
+}

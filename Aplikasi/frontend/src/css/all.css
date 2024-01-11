@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Pacifico&family=Passion+One:wght@700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #EBE3D5;
+}
+
+/* search */
+
+.cariBarang{
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBoxContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #6d685f;
+  padding-right: 40px;
+  color:#000000;
+}
+.input-search::placeholder{
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+/* CSS for the login success container */
+.background-login-success {
+  background-color: #1D2F36;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-success-container {
+  text-align: center;
+}
+
+/* Styling for the success icon */
+.success-icon {
+  background-color: #4CAF50; /* Green background color */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Create a circle */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff; /* White color for the check icon */
+  margin: 0 auto 20px;
+  animation: moveIn 1.5s ease-in-out; /* Apply the moving animation */
+}
+
+/* Add a keyframes animation for moving */
+@keyframes moveIn {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.success-icon .fa-solid.fa-check {
+  transform-origin: center;
+}
+
+/* Apply the rotation animation */
+.success-icon.success-animation .fa-solid.fa-check {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease;
+}
+
+/* Additional styling for the success text */
+.login-success-container p {
+  color: #fff;
+}
+
+/* Responsive mobile semuanya disini jangan ditempat lain @dewa */
+
+@media screen and (max-width: 768px) {
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsive dengan lebar minimum 250px */
+      gap: 20px; /* Jarak antar produk */
+      justify-items: center;
+    }
+
+    .product-card {
+      border-radius: 20px;
+      width: 300px;
+      color: white;
+      background: #1D2F36;
+      background: linear-gradient(135deg, #B0A695, #B0A695);
+      padding: 30px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+      text-align: center;
+    }
+  
+
+    .logo{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  
+  
+  
+  .logoName{
+      font-family: 'Pacifico', cursive;
+      font-size: 35px;
+      margin-left: 5px;
+  }
+
+  .subMenu:hover {
+    background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+    background-size: 100% 100%;
+    background: fixed;
+    color: #ffffff;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+    font-weight: bold;
+  }
+
+  .Menu{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+      background-color: #776B5D;
+      list-style: none;
+      border-radius: 50px;
+      filter: drop-shadow(5px 3px 10px #000000);
+      margin-bottom: 25px;
+  }
+
+  .subMenu {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 80px;
+    margin-left: -14px;
+  }
+
+  .cariBarang{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+}
